@@ -1,0 +1,1 @@
+export const contact = "https://wa.me/59899117514"

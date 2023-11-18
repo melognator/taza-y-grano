@@ -1,0 +1,40 @@
+---
+import Navbar from '../components/common/Navbar';
+import '../styles/global.css'
+import Hero from '../components/sections/Hero';
+import Gallery from '../components/sections/Gallery';
+import Testimonials from '../components/sections/Testimonials';
+import Footer from '../components/sections/Footer';
+import Items from '../components/sections/Items';
+
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Taza y Grano</title>
+        <meta name="description" content="Vení a disfrutar un buen café con el mejor servicio.  Nos ubicamos cerca de la plaza Libertad. Entrá aquí para ver las variedades de café que ofrecemos." />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+        <a class='anchor' id='top' href='#'></a>
+		<Navbar client:visible />
+        <main class='main'>
+            <Hero />
+            <Items />
+            <Gallery />
+            <Testimonials />
+            <Footer />
+            
+        </main>
+        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script is:inline>
+            AOS.init({
+                duration: 750,
+            });
+        </script>
+	</body>
+</html>
