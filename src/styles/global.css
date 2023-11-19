@@ -29,10 +29,16 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: var(--font-weigth);
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+@media (min-width: 400px) {
+    html {
+        font-size: 18px;
+    }
 }
 
 *, *:before, *:after {
